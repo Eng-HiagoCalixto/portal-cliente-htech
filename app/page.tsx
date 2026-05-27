@@ -40,7 +40,7 @@ export default function Home() {
           <a href="https://hiagotech.com.br" className="cursor-pointer">
             <h1 className="text-2xl font-bold text-slate-800">HTECH <span className="text-blue-600">T.I.</span></h1>
           </a>
-          <p className="text-gray-500 mt-2">Welcome back to Customer Portal</p>
+          <p className="text-gray-500 mt-2">Bem-vindo ao Portal do Cliente</p>
         </div>
 
         {erro && (
