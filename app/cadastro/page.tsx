@@ -40,11 +40,11 @@ export default function Cadastro() {
     setCarregando(false);
 
     if (authError) {
-      setErro(authError.message === 'User already registered' 
-        ? 'Este e-mail já está cadastrado.' 
-        : 'Erro ao criar conta. Tente novamente.');
-      return;
-    }
+  // Isso vai mostrar na tela o texto exato do erro (Ex: "Invalid API key" ou "Signups not allowed")
+  setErro(`Erro do Banco: ${authError.message}`);
+  setCarregando(false);
+  return;
+}
 
     setSucesso('Conta solicitada com sucesso! Redirecionando...');
     
