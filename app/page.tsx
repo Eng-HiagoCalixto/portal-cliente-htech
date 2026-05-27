@@ -19,9 +19,9 @@ export default function Home() {
       <div className="bg-white max-w-md w-full rounded-xl shadow-lg p-8">
         
         <div className="text-center mb-8">
-          <h1 className="text-2xl font-bold text-azulEscuro mb-2">
-            HTECH <span className="text-azulClaro">T.I.</span>
-          </h1>
+          <a href="hiagotech.com.br" className="cursor-pointer">
+  <h1 className="text-2xl font-bold text-slate-800">HTECH <span className="text-blue-600">T.I.</span></h1>
+</a>
           <p className="text-gray-500">Bem-vindo ao Portal do Cliente</p>
         </div>
 
