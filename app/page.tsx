@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link'; // Importa o Link para navegação interna
 import { supabase } from './supabase'; 
 
 export default function Home() {
@@ -94,7 +95,10 @@ export default function Home() {
         </form>
 
         <div className="mt-6 text-center text-sm text-gray-500">
-          Ainda não tem conta? <a href="#" className="text-blue-600 font-semibold hover:underline">Solicite acesso</a>
+          Ainda não tem conta?{' '}
+          <Link href="/cadastro" className="text-blue-600 font-semibold hover:underline">
+            Solicite acesso
+          </Link>
         </div>
 
       </div>
